@@ -18,7 +18,7 @@ def resource_path(relative_path: str) -> str:
 class FileOrganizerApp(tk.Tk):
     def __init__(self) -> None:
         super().__init__()
-        self.title("File Organizer")
+        self.title("Gotchu")
         self.iconbitmap(resource_path("assets/file_organizer.ico"))
         self.geometry("720x500")
         self.minsize(650, 430)
@@ -31,8 +31,8 @@ class FileOrganizerApp(tk.Tk):
     def _build_ui(self) -> None:
         frame = ttk.Frame(self, padding=18)
         frame.pack(fill="both", expand=True)
-        ttk.Label(frame, text="FILE ORGANIZER", font=("Segoe UI", 18, "bold")).pack(anchor="w")
-        ttk.Label(frame, text="Organize files locally using your saved rules.").pack(anchor="w", pady=(0, 14))
+        ttk.Label(frame, text="Gotchu", font=("Segoe UI", 18, "bold")).pack(anchor="w")
+        ttk.Label(frame, text="You drop it. Gotchu.").pack(anchor="w", pady=(0, 14))
 
         source = ttk.LabelFrame(frame, text="Source Folder", padding=10)
         source.pack(fill="x")
@@ -102,7 +102,7 @@ class FileOrganizerApp(tk.Tk):
 class SettingsDialog(tk.Toplevel):
     def __init__(self, parent: FileOrganizerApp, settings: dict, save_callback) -> None:
         super().__init__(parent)
-        self.title("File Organizer Settings")
+        self.title("Gotchu Settings")
         self.geometry("800x470")
         self.transient(parent)
         self.grab_set()
