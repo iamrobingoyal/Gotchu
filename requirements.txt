@@ -1,0 +1,3 @@
+# Build-time dependency for packaging FileOrganizer into a standalone Windows executable.
+# Note: The application runtime exclusively uses Python's standard library (tkinter, pathlib, etc.).
+pyinstaller>=6.0.0

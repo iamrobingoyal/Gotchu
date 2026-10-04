@@ -1,0 +1,63 @@
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# C extensions
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# PyInstaller & Build artifacts
+build/
+dist/
+*.manifest
+*.spec.bak
+
+# Inno Setup compiled installer output
+installer/*.exe
+
+# Environment variables & local secrets
+.env
+.env.*
+!.env.example
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Windows OS metadata
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+
+# macOS metadata
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Editor and IDE configurations
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+
+# Temporary scratch files
+*.tmp
+*.temp
+*~
